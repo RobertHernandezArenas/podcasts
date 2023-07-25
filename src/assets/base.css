@@ -1,0 +1,50 @@
+:root {
+	/**
+   * H (hue) S (saturation) L(lightnes)
+   * Main hue (color)*/
+	--hue: 207;
+
+	/* Light and dark variations */
+	--lightness-light: calc(var(--lightness) + 20%);
+	--lightness: 50%;
+	--lightness-dark: calc(var(--lightness) - 20%);
+
+	/* 1# Neutral colors */
+	--neutral-100: hsl(0, 0%, 100%);
+	--neutral-96: hsl(0, 0%, 96%);
+	--neutral-90: hsl(0, 0%, 90%);
+	--neutral-80: hsl(0, 0%, 80%);
+	--neutral-70: hsl(0, 0%, 70%);
+	--neutral-60: hsl(0, 0%, 60%);
+	--neutral-50: hsl(0, 0%, 50%);
+	--neutral-40: hsl(0, 0%, 40%);
+	--neutral-30: hsl(0, 0%, 30%);
+	--neutral-20: hsl(0, 0%, 20%);
+	--neutral-10: hsl(0, 0%, 10%);
+	--neutral-0: hsl(0, 0%, 0%);
+
+	/* 2# Theme colors */
+	--theme-light: hsl(var(--hue), 100%, var(--lightness-light));
+	--theme: hsl(var(--hue), 71%, 41%);
+	--theme-dark: hsl(var(--hue), 100%, var(--lightness-dark));
+
+	/* 3# Error colors */
+	--error-light: hsl(0, 100%, var(--lightness-light));
+	--error: hsl(0, 100%, var(--lightness));
+	--error-dark: hsl(0, 100%, var(--lightness-dark));
+
+	/* 4# Success colors */
+	--success-light: hsl(110, 100%, var(--lightness-light));
+	--success: hsl(110, 100%, var(--lightness));
+	--success-dark: hsl(110, 100%, var(--lightness-dark));
+
+	/* 5# Sizes */
+	--zero: 0;
+	--xs: 0.25rem;
+	--s: 0.5rem;
+	--m: 1rem;
+	--l: 1.5rem;
+	--xl: 2rem;
+	--xxl: 2.5rem;
+	--xxxl: 3rem;
+}
